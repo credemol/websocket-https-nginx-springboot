@@ -1,0 +1,29 @@
+version: '3'
+
+services: 
+  websocket-app:
+    build: 
+      context: ./
+      dockerfile: ./docker/websocket-server/Dockerfile
+    image: credemol/md3-websocket-server:1.0.0
+    labels:
+    - "kompose.service.type=nodeport"        
+    expose:
+      - "8080"        
+    ports: 
+      - "8080"      
+
+  nginx:
+    build:
+      context: ./
+      dockerfile: ./docker/nginx/Dockerfile
+    image: credemol/md3-nginx:1.0.0
+    hostname: qc1.iclinicemr.com
+    #command: ["/etc/nginx/wait-for-it.sh", "websocket-app:8080", "--", "nginx", "-g", "daemon off;"]
+    ports: 
+      - "80:80"    
+      - "443:443"    
+    depends_on:
+      - websocket-app
+    links:
+      - websocket-app           

@@ -1,0 +1,7 @@
+{
+    "runtime":{
+        "majorVersion": "8"
+    },
+    "command": "java -jar websocket-0.0.1-SNAPSHOT.jar",
+    "notes": "SGI WS API"
+}
