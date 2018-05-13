@@ -19,7 +19,7 @@ services:
       dockerfile: ./docker/nginx/Dockerfile
     image: credemol/md3-nginx:1.0.0
     hostname: qc1.iclinicemr.com
-    #command: ["/etc/nginx/wait-for-it.sh", "websocket-app:8080", "--", "nginx", "-g", "daemon off;"]
+    command: ["/etc/nginx/wait-for-it.sh", "websocket-app:8080", "--", "nginx", "-g", "daemon off;"]
     ports: 
       - "80:80"    
       - "443:443"    
