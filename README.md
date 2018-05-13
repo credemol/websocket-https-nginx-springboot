@@ -1,5 +1,8 @@
 # Nginx and Websocket on HTTPS
 
+> I used source files for websocket server and client application from http://www.devglan.com/spring-boot/spring-boot-angular-websocket and I just amended a little for HTTPS.
+ 
+
 ---
 ## Introduction
 
@@ -105,6 +108,7 @@ If your browser has a problem connecting to Nginx server, please check your cert
 
 - [https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04)
 
+-[http://www.devglan.com/spring-boot/spring-boot-angular-websocket](http://www.devglan.com/spring-boot/spring-boot-angular-websocket)
 
 ---
 ## Appendix
