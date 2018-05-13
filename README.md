@@ -24,7 +24,7 @@ $ cd websocket-https-nginx-springboot
 ```
 
 ---
-### Build WebSocker Server(Spring Boot)
+### Build WebSocket Server(Spring Boot)
 
 ```sh
 $ cd websocket
@@ -36,7 +36,7 @@ $ ls build/libs/websocket-0.0.1-SNAPSHOT.jar
 ```
 
 ---
-### WebSocker Server
+### WebSocket Server
 
 - [WebSocketConfig.java](websocket/src/main/java/com/iclinicemr/sample/websocket/config/WebSocketConfig.java)
 - [WebSocketController.java](websocket/src/main/java/com/iclinicemr/sample/websocket/controller/WebSocketController.java)
@@ -51,8 +51,11 @@ $ ls build/libs/websocket-0.0.1-SNAPSHOT.jar
 - [Dockerfile](docker/nginx/Dockerfile)
 
 ---
-### Web Socker Endpoint 
+### Web Socket Endpoint 
 
+```javascript
+let socket = new WebSocket("wss://localhost/greeting");
+```
 [angular-5-websocket/src/app/app.component.ts](angular-5-websocket/src/app/app.component.ts#L27)
 
 ---
