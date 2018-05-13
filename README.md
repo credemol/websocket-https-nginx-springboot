@@ -140,9 +140,9 @@ If your browser has a problem connecting to Nginx server, please check your cert
 
 - [https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04)
 
--[https://github.com/only2dhir/angular-5-websocket](https://github.com/only2dhir/angular-5-websocket)
+- [https://github.com/only2dhir/angular-5-websocket](https://github.com/only2dhir/angular-5-websocket)
 
--[http://www.devglan.com/spring-boot/spring-boot-angular-websocket](http://www.devglan.com/spring-boot/spring-boot-angular-websocket)
+- [http://www.devglan.com/spring-boot/spring-boot-angular-websocket](http://www.devglan.com/spring-boot/spring-boot-angular-websocket)
 
 ---
 ## Appendix
