@@ -1,4 +1,4 @@
-# Nginx and Websocket
+# Nginx and Websocket on HTTPS
 
 ---
 ## Introduction
@@ -16,7 +16,7 @@ This sample has three components
 ![docs/images/implementation.png](docs/images/implementation.png)
 
 ---
-## How to setting up 
+## How to set up 
 
 ```sh
 $ git clone https://github.com/credemol/websocket-https-nginx-springboot.git
@@ -93,6 +93,8 @@ $ open http://localhost:4200
 
 ---
 ### WebBrowser-Certificate Management
+
+If your browser has a problem connecting to Nginx server, please check your certificate is self signed, If then, you should add this certificate as an exception like below. 
 
 ![docs/images/firefox-certificate-1.png](docs/images/firefox-certificate-1.png)
 
