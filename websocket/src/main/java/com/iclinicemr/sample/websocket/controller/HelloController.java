@@ -15,6 +15,5 @@ public class HelloController {
     @GetMapping("")
     public ResponseEntity<String> sayHello() {
         return ResponseEntity.ok("Hello World. It is " + new Date());
-        //return new ResponseEntity<String>("Hello World. It is " + new Date(), HttpStatus.OK);
     }
 }
