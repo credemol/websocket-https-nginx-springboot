@@ -54,6 +54,38 @@ $ ls build/libs/websocket-0.0.1-SNAPSHOT.jar
 - [Dockerfile](docker/nginx/Dockerfile)
 
 ---
+#### nginx.conf
+
+```conf
+upstream websocket-server {
+	server websocket-app:8080 weight=1;
+}
+
+server {
+#    listen              80 default_server;
+    listen              [::]:443 ssl;
+    listen              443 ssl;
+    ssl_verify_client off;
+
+    ssl_certificate /etc/nginx/certs/nginx-selfsigned.crt;
+    ssl_certificate_key /etc/nginx/certs/nginx-selfsigned.key;
+
+    ssl on;
+    ssl_session_cache  builtin:1000  shared:SSL:10m;
+    ssl_protocols  TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers HIGH:!aNULL:!eNULL:!EXPORT:!CAMELLIA:!DES:!MD5:!PSK:!RC4;
+    ssl_prefer_server_ciphers on;
+
+	location / {
+        proxy_pass http://websocket-server;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";        
+	}
+}
+```
+
+---
 ### Web Socket Endpoint 
 
 ```javascript
