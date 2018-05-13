@@ -161,9 +161,9 @@ $ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ./ssl/private/qc1.
 Country Name (2 letter code) []:CA
 State or Province Name (full name) []:British Columbia
 Locality Name (eg, city) []:Vancouver
-Organization Name (eg, company) []:iclinic
+Organization Name (eg, company) []:my company
 Organizational Unit Name (eg, section) []:Dev
-Common Name (eg, fully qualified host name) []:qc1.iclinicemr.com
+Common Name (eg, fully qualified host name) []:example.com
 Email Address []:credemol@gmail.com
 ```
 
